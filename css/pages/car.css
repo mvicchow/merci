@@ -1,0 +1,57 @@
+main label {
+    text-align: left;
+    width: 100%;
+    padding: 30px 40px 0;
+    font-size: 1.8rem;
+}
+
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards {
+    background-color: rgb(207, 207, 218);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 50px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.img-container {
+    width: 200px;
+}
+
+.car-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.cards:hover .img-container {
+    width: 250px;
+    transition-duration: 0.4s;
+}
+
+/* hover image + pseudo element */
+.cards:hover .img-container::after {
+    content: "CLICK TO ORDER NOW";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.cards:active {
+    background-color: aliceblue;
+    
+}

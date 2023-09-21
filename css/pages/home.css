@@ -1,0 +1,146 @@
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+.section img {
+    width: 300px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 250px;
+}
+
+.section1 {
+    flex-direction: column;
+    background-image: 
+        linear-gradient(
+            rgba(255, 255, 255, 0.1),
+            rgba(17, 71, 248, 0.2)
+            ),
+        url(../../assets/background/home-section1.jpg);
+    background-size: cover;
+    background-position: top center;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+
+.section1-container {
+    text-align: right;
+    line-height: 40px;
+
+}
+
+.tagline {
+    font-size: 1.2rem;
+}
+
+.section1-title {
+    font-family: 'Aclonica', sans-serif;
+    font-size: 2.5rem;
+}
+
+.section2 {
+    text-align: center;
+    gap: 30px;
+    justify-content: flex-start;
+    background-image: linear-gradient(-90deg,
+        rgb(106, 104, 157),
+        rgb(244, 244, 244),
+        rgb(220, 199, 199)
+    );
+}
+
+.section2 img {
+    height: 300px;
+    width: auto;
+}
+.section2-container {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.section2-title {
+    font-size: 2rem;
+}
+
+.section2-button {
+    background-color: rgb(189, 189, 189);
+    width: 80%;
+    border-radius: 0 30px 0;
+}
+
+.section2:hover {
+    background-image: linear-gradient(-90deg,
+        rgb(106, 104, 157),
+        rgb(220, 199, 199)
+    );
+}
+
+.section2:hover .section2-button{
+    transition-duration: 0.3s;
+    background-color: rgb(104, 104, 104);
+    color: rgb(214, 248, 237);
+    text-shadow: 0px 0px 5px rgb(136, 112, 228);
+}
+
+.section3 {
+    background-image: 
+        radial-gradient(
+            rgba(21, 30, 61, 0.8),
+            rgba(29, 8, 8, 0.2)), 
+        url("../../assets/background/home-section3.jpg");
+    background-size: cover;
+    background-position: top center;
+    font-size: 2rem;
+    color: rgb(216, 216, 216);
+}
+
+.section3:hover {
+    text-shadow: 1px 1px 5px rgb(112, 112, 112);
+    background-image: 
+        radial-gradient(
+            rgba(21, 30, 61, 0.8),
+            rgba(29, 8, 8, 0.765)), 
+        url("../../assets/background/home-section3.jpg");
+    
+}
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .section2 img {
+        height: auto;
+        width: 200px;
+    }
+    
+    .section2-container {
+        font-size: 1rem;
+    }
+
+    .section2-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 810px) {
+    :root {
+        font-size: 16px;
+    }
+
+    .section2 img {
+        height: auto;
+        width: 250px;
+    }
+
+    .section2-button {
+        width: 60%;
+    }
+}

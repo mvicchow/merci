@@ -1,0 +1,33 @@
+/* font for logo */
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+/* font for header-footer */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+/* font for content */
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital@0;1&display=swap');
+
+* {
+    margin :0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    font-size: 20px;
+}
+
+
+html, body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(232, 232, 232);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gentium Plus', serif;
+}

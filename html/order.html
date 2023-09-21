@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCI - ORDER FORM</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/pages/order.css">
+</head>
+<body>
+    <header>
+        <a href="./home.html" class="header-logo">
+            <img src="../assets/merci-logo.png" alt="" class="header-logo-img">
+            MERCI
+        </a>
+        <input type="checkbox" id="hamburger-toggler">
+        <label for="hamburger-toggler" class="hamburger-bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <span class="divider"></span>
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li><a href="./home.html" class="nav-button">HOME</a></li>
+                <li><a href="./about.html" class="nav-button">ABOUT US</a></li>
+                <li><a href="./car.html" class="nav-button">CAR MODELS</a></li>
+                <li><a href="./order.html" class="nav-button current-site">ORDER</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <div class="page-title">ORDER</div>
+        <form 
+            action="./order.html"
+            name="order-form"
+            class="order-form"
+        >
+            <div class="row">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="Full Name">
+            </div>
+            <div class="row">
+                <label for="email">Email</label>
+             <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="row">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number">
+            </div>
+            <div class="row">
+                <label for="province">Province</label>
+                <input type="text" name="province" id="province" placeholder="Province">
+            </div>
+            <div class="row">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="City">
+            </div>
+            <div class="row">
+                <label for="address">Address</label>
+                <input type="text" name="address" id="address" placeholder="Address">
+            </div>
+            <div class="row">
+                <label for="model">Model</label>
+                <select name="model" id="model">
+                    <option value="NULL">-Choose Car Model-</option>
+                    <option value="SPO-111">SPO-111</option>
+                    <option value="SPO-222">SPO-222</option>
+                    <option value="SPO-333">SPO-333</option>
+                    <option value="SPO-444">SPO-444</option>
+                    <option value="SPO-555">SPO-555</option>
+                    <option value="SPO-666">SPO-666</option>
+                    <option value="SPO-777">SPO-777</option>
+                    <option value="SPO-888">SPO-888</option>
+                    <option value="PAS-101">PAS-101</option>
+                    <option value="PAS-102">PAS-102</option>
+                    <option value="PAS-103">PAS-103</option>
+                    <option value="PAS-104">PAS-104</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="color">Car Color</label>
+                <div class="color-row">
+                    <div>
+                        <input type="radio" name="color" value="white" class="color" id="white">
+                        <label for="white">White</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" value="black" class="color" id="black">
+                        <label for="black">Black</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" value="red" class="color" id="red">
+                        <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" value="yellow" class="color" id="yellow">
+                        <label for="yellow">Yellow</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="color" value="blue" class="color" id="blue">
+                        <label for="blue">Blue</label>
+                    </div>
+                </div>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="terms" id="terms" class="checkbox">
+                <label for="terms">I agree to the <b>Terms and Conditions</b>.</label>
+            </div>
+            <button type="submit">ORDER</button>
+        </form>
+    </main>
+    <footer>
+        <a href="./home.html" class="footer-logo">
+            <img src="../assets/merci-logo.png" alt="" class="footer-logo-img">
+            MERCI
+        </a>
+        <div class="social-media">
+            <a target="_blank" href="https://web.facebook.com/profile.php?id=100081952036816">
+                <img src="../assets/facebook.png" alt="FACEBOOK" id="fb-icon">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/merci_idn">
+                <img src="../assets/Instagram.png" alt="INSTAGRAM" id="ig-icon">
+            </a>
+        </div>
+        <span class="footer-divider"></span>
+        <p>
+            COPYRIGHT © 2022 MERCI - ALL RIGHTS RESERVED
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.section {
+    width: 100%;
+    display: flex;
+    padding: 50px;
+}
+
+#section1 {
+    background-color: aqua;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 'Aclonica', sans-serif;
+}
+ 
+#section1-logo-img {
+    width: 60px;
+    height: auto;
+    display: flex;
+}
+
+.text-container, .text-container-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: right;
+    width: 100%;
+    min-height: 200px;
+}
+
+.text-container-left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.title {
+    font-size: 1.4rem;
+}
+
+.content {
+    font-size: 1rem;
+}
+
+#section1 .content {
+    width: 70%;
+}
+
+#section1 {
+    background-size: cover;
+    background-position: center center;
+    background-image: 
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255,1)
+        ),
+        url(../../assets/background/About-section1.jpg);
+    
+}
+
+#section2 {
+    background-size: cover;
+    background-position: center center;
+    background-image: 
+        linear-gradient(990deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255,0.7)
+        ),
+        url(../../assets/background/About-section2.jpg);
+    
+}
+
+#section3 {
+    background-size: cover;
+    background-position: center center;
+    background-image: 
+        linear-gradient(90deg,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255,0.7)
+        ),
+        url(../../assets/background/About-section3.jpg);
+    
+}
+
+
+@media (max-width: 576px) {
+    :root {
+        font-size: 12px;
+    }
+    .logo-container{
+        font-size: 30px;
+    }
+    #section1-logo-img {
+        width: 40px;
+        height: auto;
+    }
+    .title {
+        font-size: 1.3rem;
+    }
+    #section1 .content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 810px) {
+    :root {
+        font-size: 16px;
+    }
+}
